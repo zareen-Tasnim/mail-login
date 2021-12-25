@@ -8,7 +8,7 @@ PATH = "C:\\Program Files\\chromedriver.exe"
 driver = webdriver.Chrome(PATH)
 driver.get('https://account.protonmail.com/login')
 time.sleep(5)
-path = "D://Kinetic/datafile.xlsx"
+path = "D://zareen/datafile.xlsx"
 rows = xlutils.getRowCount(path, 'Sheet1')
 for r in range(2, rows+1):
     username = xlutils.readdata(path, "Sheet1", r, 1)
